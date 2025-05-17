@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Care Products | Catálogo Virtual</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      background: #0a0a0a;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.12;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      max-width: 900px;
+    }
+
+    .hero-logo {
+      max-width: 140px;
+      margin-bottom: 20px;
+      filter: brightness(0) invert(1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #ff0000, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+      margin: 20px auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      animation: fadeInUp 1.7s ease;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .cta-button:hover {
+      background-color: #ffffff;
+      color: #ff0000;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2017/01/05/6750-199314449_large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h4>Propuesta de migración de catálogo y mejora de ventas por CrisInnov</h4>
+      <h1>¡Bienvenido al nuevo catálogo virtual!</h1>
+      <p>Analizando el requerimiento de All Care Products para mostrar productos y servicios de forma moderna y efectiva, creamos una solución web enfocada en entusiastas del automovilismo.</p>
+      <p>Este sitio es más que un catálogo: es una experiencia de compra potente, optimizada y lista para convertir visitas en clientes.</p>
+      <p>Ya no requerirás de horas y horas modificando o creando en el lento Word. Tus clientes solo dan clic e ingresan a su experiencia interactiva de visualización y compra.</p>
+      <p>Se mejoran las <strong>ventas</strong> a través de una <strong>experiencia de compra más rápida y eficaz</strong>.</p>
+      <ul>
+        <li>🔍 Navegación fácil y atractiva</li>
+        <li>⚙️ Visualización rápida y ordenada</li>
+        <li>🚗 Catálogo inmersivo para clientes entusiastas</li>
+      </ul>
+      <button class="cta-button" onclick="window.location.href='https://wa.me/573126856907'">
+        ✅ Acepto, ¡Iniciemos!
+      </button>
+    </div>
+  </section>
+  <section class="slider-section" style="background-color: #fff; padding: 60px 0; position: relative; overflow: hidden;">
+    <div class="stars-background"></div>
+  
+    <h2 class="slider-title" style="font-size: 2.2rem; margin-bottom: 30px; color: #111; position: relative; z-index: 2;">
+      Una vista previa a tu nuevo catálogo
+    </h2>
+  
+    <!-- Slider 1: izquierda a derecha -->
+    <div class="slider-container left-to-right">
+      <div class="slider-item">
+        <img src="Imagenes/img1-all.png" alt="Producto 1">
+        <div class="price-tag">$334.000</div>
+        <button class="buy-button">Potencia que impulsa tu camino</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img2all.png" alt="Producto 2">
+        <div class="price-tag">$220.000</div>
+        <button class="buy-button">Activa la pasión por el motor</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img3all.png" alt="Producto 3">
+        <div class="price-tag">$197.000</div>
+        <button class="buy-button">Diseñado para la victoria</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img4all.png" alt="Producto 7">
+        <div class="price-tag">$625.000</div>
+        <button class="buy-button">Velocidad sin límites</button>
+      </div>
+    </div>
+  
+    <h2 class="slider-title" style="font-size: 2rem; margin: 60px 0 30px; position: relative; z-index: 2;">
+      Desde otra perspectiva visual
+    </h2>
+  
+    <!-- Slider 2: derecha a izquierda -->
+    <div class="slider-container right-to-left">
+      <div class="slider-item">
+        <img src="Imagenes/img5all.png" alt="Producto 4">
+        <div class="price-tag">$425.000</div>
+        <button class="buy-button">Máxima precisión al volante</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img6all.png" alt="Producto 5">
+        <div class="price-tag">$178.000</div>
+        <button class="buy-button">Tu estilo, tu potencia</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img-8all.png" alt="Producto 6">
+        <div class="price-tag">$40.900</div>
+        <button class="buy-button">Aceleramos tus expectativas</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img9all.png" alt="Producto 8">
+        <div class="price-tag">$3.735.000</div>
+        <button class="buy-button">Lavado unico</button>
+      </div>
+    </div>
+  
+    <h2 class="slider-title" style="font-size: 2rem; margin: 60px 0 30px; position: relative; z-index: 2;">
+      Exploración total de productos
+    </h2>
+  
+    <!-- Slider 3: izquierda a derecha -->
+    <div class="slider-container left-to-right">
+      <div class="slider-item">
+        <img src="Imagenes/img10all.png" alt="Producto 9">
+        <div class="price-tag">$3.269.000</div>
+        <button class="buy-button">Velocidad y eficacia en el vado</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img11all.png" alt="Producto 10">
+        <div class="price-tag">$31.900</div>
+        <button class="buy-button">Brillo y color</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img12all.png" alt="Producto 11">
+        <div class="price-tag">$5.164.900</div>
+        <button class="buy-button">Innovación en cada detalle</button>
+      </div>
+      <div class="slider-item">
+        <img src="Imagenes/img-13all.png" alt="Producto 12">
+        <div class="price-tag">$500.000</div>
+        <button class="buy-button">Diseño que impone respeto</button>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .slider-section {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .slider-title {
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .slider-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+      padding: 20px 0;
+      transition: transform 0.3s ease-in-out;
+      scroll-behavior: smooth;
+      position: relative;
+      z-index: 2;
+    }
+
+    h2{
+        color: red;
+    }
+  
+    .left-to-right {
+      flex-direction: row;
+    }
+  
+    .right-to-left {
+      flex-direction: row-reverse;
+    }
+  
+    .slider-item {
+      flex: 0 0 auto;
+      width: 80vw;
+      max-width: 400px;
+      scroll-snap-align: center;
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease;
+      background: #fff;
+    }
+  
+    .slider-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+  
+    .slider-item:hover {
+      transform: scale(1.05);
+    }
+  
+    .price-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 6px 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 25px;
+      pointer-events: none;
+    }
+  
+    .buy-button {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #000;
+      color: #fff;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  
+    .buy-button:hover {
+      background: #b22222;
+    }
+  
+    /* Fondo de estrellas ganador formula 1, sutil */
+    .stars-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+      z-index: 1;
+    }
+  
+    /* pocas estrellas dispersas y sutiles */
+    .stars-background::before, .stars-background::after {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      background-image: radial-gradient(circle, rgba(178,34,34,0.3) 2px, transparent 3px);
+      background-size: 60px 60px;
+      animation: twinkle 12s linear infinite;
+      opacity: 0.15;
+    }
+  
+    .stars-background::after {
+      animation-delay: 6s;
+    }
+  
+    @keyframes twinkle {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-10px, -15px); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+
+<section class="marketing-section" style="background-color: #121212; color: #f1f1f1; padding: 80px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">
+    <h2 style="font-size: 2.8rem; margin-bottom: 20px; font-weight: 700;">Impulsa tus ventas y alcance con campañas efectivas</h2>
+    <p style="font-size: 1.25rem; max-width: 900px; margin: 0 auto 50px; line-height: 1.6;">
+      Con estrategias personalizadas en <strong>Facebook Ads</strong> y <strong>Google Ads</strong>, diseñamos campañas enfocadas en maximizar tu visibilidad, atraer clientes entusiastas y generar ventas reales. Utilizamos segmentación avanzada y anuncios atractivos para conectar con tu audiencia ideal, asegurando que cada inversión se traduzca en crecimiento tangible para tu negocio.
+    </p>
+    
+    <div class="ads-container" style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;">
+      
+      <!-- Facebook Ads -->
+      <div class="ad-block" style="flex: 1 1 300px; max-width: 350px; background: #242526; border-radius: 16px; padding: 30px; box-shadow: 0 10px 25px rgba(59,89,152,0.6);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook Ads" style="width: 120px; margin-bottom: 25px;">
+        <h3 style="color: #3b5998; font-weight: 700; margin-bottom: 15px;">Facebook Ads</h3>
+        <p style="font-size: 1rem; line-height: 1.5;">
+          Creamos anuncios segmentados que impactan a usuarios con intereses específicos y comportamientos relevantes para tu producto, logrando que tu marca se destaque y genere engagement genuino. Esto aumenta la visibilidad y convierte seguidores en clientes entusiastas.
+        </p>
+        <p style="font-weight: 600; margin-top: 15px; color: #77aaff;">Mayor alcance + interacción efectiva = más ventas</p>
+      </div>
+  
+      <!-- Google Ads -->
+      <div class="ad-block" style="flex: 1 1 300px; max-width: 350px; background: #242526; border-radius: 16px; padding: 30px; box-shadow: 0 10px 25px rgba(66,133,244,0.6);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Ads" style="width: 130px; margin-bottom: 25px;">
+        <h3 style="color: #4285F4; font-weight: 700; margin-bottom: 15px;">Google Ads</h3>
+        <p style="font-size: 1rem; line-height: 1.5;">
+          Aparecemos en el momento justo cuando tus clientes buscan productos o servicios como los tuyos, capturando la intención de compra. Así aumentamos conversiones con anuncios relevantes que impulsan ventas rápidas y efectivas.
+        </p>
+        <p style="font-weight: 600; margin-top: 15px; color: #77aaff;">Impacto puntual + clientes con intención = ventas seguras</p>
+      </div>
+    </div>
+  </section>
+  
+  
+</body>
+</html>
